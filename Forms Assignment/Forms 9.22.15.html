@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+	<title>Ice Cream Social Event Feedback</title>
+
+</head>
+<body>
+	<h1>Feedback Form: Ice Cream Social</h1>
+		
+		<h3>Thank you for joining us last night at our first ice cream networking event! We would love to get your feedback on the event. Your opinions will be used for future events.
+		</h3>
+		<form>
+			<p>What brought you to our event last night?</p>
+				<input type="checkbox" name="attendee" value="yes"> I am a Job Seeker looking to make new connections.
+				<br>
+				<input type="checkbox" name="attendee" value="yes"> I am a Hiring Manager searching for new talent.
+				<br>
+				<input type="checkbox" name="attendee" value="yes"> I am trying to build my local professional network.
+				<br>
+				<input type="checkbox" name="attendee" value="yes"> I got invited by a friend and thought, "Hey, free ice cream, why  not?"
+				<br>
+
+			<p>Based on last night's event, how likely are you to attend our next event?</p>
+				<select name="future_event">
+					<option value="Yes1">Very Likely: I had a grat time and will definitely be back</option>
+					<option value="Maybe">Likely: I had a good time but did not get much out of the event.</option> 
+					<option value="No">Not Likely: I will not be returning to another event.</option><br>
+				</select>
+
+			</form>
+			<form>
+				<label for="textareaChars">Please add any additional comments or feedback below. No more than 50 characters.</label>
+				<textarea id="textareaChars" maxlength="50"></textarea>
+				<script src="textarea-counter.js"></script>
+				<span id="chars">50 </span>characters remaining
+				<br>
+				<input type="submit">
+		</form>
+		
+</body>
+</html>
