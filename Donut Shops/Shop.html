@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="header">Donut Shop Project</title>
+	<link href="Shop.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src = "Donut-Shop.js" ></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1><img id="header" src="donut-header.jpg"/></h1>
+	<div id="menuBar">
+		<div class = "location" id="allLocation">All Locations</div>
+		<div class="location">Downtown</div>
+		<div class="location">Capitol Hill</div>
+		<div class="location">South Lake Union</div>
+		<div class="location">Wedgewood</div>
+		<div class="location">Ballard</div>
+	</div>
+
+	<div id="procedure">
+			<h3>How the Program Works:</h3>
+		<p>
+			<ol><!--Create an outline of how the program is supposed to work-->
+				<li>Using the data that we alredy know for each location, we create methods to plan donut production for any given day.</li>
+				
+				<li>Before we start inputting the parameters, I created a couple global functions that we could call upon later: myRandomNum, getCustPerHour, getDonpHr, getTotal.</li>
+				
+				<li>Once we have or global functions, it's time to create a Shop object tthat provides us a place to pass each location's data.</li>
+				
+				<li>Within the Shop object, more functions were added with parameters specific to the shop's location.</li>
+				
+				<li>The Menu bar at the top will eventually allow you to click through each location for their production numbers; while the "All Locations" button will provide you with the default summary page for all locations.</li>
+			</ol>
+		</p>
+	</div>
+
+	<div><!--Create a table with faux data inside-->
+			<table class="storeData">
+				<tbody id="allShops">
+				<th id="tableHeader" colspan= "6" >Summary of All Locations</th>
+					<tr id="locationHeader">
+							<th></th>
+							<th>Downtown</th>
+							<th>Capitol Hill</th>
+							<th>South Lake Union</th>
+							<th>Wedgewood</th>
+							<th>Ballard</th>
+							<br>
+					<tr></tr>
+						<td class="info">Operating Hours</td>
+						<td>6am-2pm</td>
+						<td>24 hrs</td>
+						<td>6am-4pm</td>
+						<td>6am-1pm</td>
+						<td>6am-4pm</td>
+					<tr></tr>
+					<td class="info">Average Donuts Sold per Hour</td>
+					<td class="even">36</td>
+					<td class="even">24</td>
+					<td class="even">42</td>
+					<td class="even">18</td>
+					<td class="even">42</td>
+						<br>
+
+				
+					<tr>
+						<td class="info">Total Production for Day</td>
+						<td>200</td>
+						<td>200</td>
+						<td>200</td>
+						<td>200</td>
+						<td>200</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+	
+</body>
+
+
+</html>
+
+	<!--<h2>Welcome to the Donut Shop Homepage!</h2>
+	<h4>We're not quite up-and-running yet...<br>
+		but here's a lowdown on how the program is <em>supposed</em> to work.</h4>
+
+	
+	
+
+	<!--<div id="sidebar">
+		<ul>
+			<li>Downtown</li>
+			<li>Capitol Hill</li>
+			<li>South Lake Union (SoLU)</li>
+			<li>Wedgewood</li>
+			<li>Ballard</li>
+		</ul>
+	</div>
+	<div class="intro">
+			<h3>How the Program Works:</h3>
+		<p class="outline">
+			<ol><!--Create an outline of how the program is supposed to work
+				<li>First, an object called "Shop" was created using Constructor notation.</li>
+				
+				<li>While we are given a few key pieces of information, there is an unknown that we must create a method for. This method is to calculate a random number of Customers per Hour given the high and slow traffic times.</li>
+				
+				<li>The random Customers per Hour ('custPerHour') value is calculated using a Math.random method of the Math object. </li>
+				
+				<li>Once we know the customers per hour for each hour of operation and the average units sold per customer(data that was given), we can then begin to calculate the number of donuts we must bake per hour, and per day. </li>
+				
+				<li>A for loop was created to pass the custPerHour data through a function that calculates donuts we need to bake per hour (bakePerHour); the limit of the loop is the number of hours that the shop is open.</li>
+				
+				<li>The latter part of the baking equations, bake per day (bakePerDay) is the total the donuts baked per hour for that day. I am still working on how to get that.</li>
+				
+				<li>And someday...this table below will hold all of this data for you to view, review, and enjoy!</li>
+			</ol>
+		</p>
+	</div>
+<div id="footer">Copywright 2015</div>-->
